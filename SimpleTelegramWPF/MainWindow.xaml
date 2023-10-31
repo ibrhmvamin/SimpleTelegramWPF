@@ -1,0 +1,228 @@
+﻿<Window x:Class="SimpleTelegramWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleTelegramWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="12*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Image Source="Resources/main-menu.png" Stretch="Uniform" Margin="6" />
+                </Grid>
+                <Grid Grid.Column="1">
+                    
+                        <TextBox Background="LightGray" Margin="9 9 40 9" Name="searchtxtbox" Text="Search" TextAlignment="Left" MouseDoubleClick="SearchClick"
+                      FontSize="14" Foreground="Gray"       HorizontalContentAlignment="Center" />
+                    
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                   </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Border CornerRadius="30" Grid.Column="0" Width="50" Height="50" Background="OrangeRed">
+                        <Label Content="ES" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="White" />
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Content="Eva Summer" Foreground="White" Background="DeepSkyBlue" Margin="5 0 0 0 "/>
+                    <Label Content="Reminds me of a Chinese  prover..." VerticalContentAlignment="Bottom" Foreground="White" HorizontalAlignment="Left" Margin="5 0 0 0 "/>
+                    <Label HorizontalAlignment="Right" Content="11:00" Margin="5 2 5 10" Foreground="LightGray"/>
+                    <Image Source="Resources/pin.png" HorizontalAlignment="Right" VerticalAlignment="Bottom" Stretch="Uniform" Width="20" Margin="0 10 10 2"/>
+                </Grid>
+                
+            </Grid>
+            
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Border CornerRadius="30" Grid.Column="0" Width="50" Height="50" Background="Orange">
+                        <Label Content="AS" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="White" />
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Content="Alexandra Smith" Foreground="Gray" Background="White" Margin="5 0 0 0 "/>
+                    <Label Content="This is amazing!" VerticalContentAlignment="Bottom" Foreground="Gray" HorizontalAlignment="Left" Margin="5 0 0 0 "/>
+                    <Label HorizontalAlignment="Right" Content="10:00" Margin="5 2 5 10" Foreground="LightGray"/>
+                </Grid>
+                
+
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Border CornerRadius="30" Grid.Column="0" Width="50" Height="50" Background="YellowGreen">
+                        <Label Content="MA" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="White" />
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Content="Mike Apple" Foreground="Gray" Background="White" Margin="5 0 0 0 "/>
+                    <Label Content="Sticker" VerticalContentAlignment="Bottom" Foreground="Blue" HorizontalAlignment="Left" Margin="5 0 0 0 "/>
+                    <Label HorizontalAlignment="Right" Content="9:00" Margin="5 2 5 10" Foreground="LightGray"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Border CornerRadius="30" Grid.Column="0" Width="50" Height="50" Background="GreenYellow">
+                        <Label Content="EC" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="White" />
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Content="Evening Club" Foreground="Gray" Background="White" Margin="5 0 0 0 "/>
+                    <Label Content="Eva: Photo" VerticalContentAlignment="Bottom" Foreground="Blue" HorizontalAlignment="Left" Margin="5 0 0 0 "/>
+                    <Label HorizontalAlignment="Right" Content="8:00" Margin="5 2 5 10" Foreground="LightGray"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Border CornerRadius="30" Grid.Column="0" Width="50" Height="50" Background="BlueViolet">
+                        <Label Content="OP" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="White" />
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Content="Old Pirates" Foreground="Gray" Background="White" Margin="5 0 0 0 "/>
+                    <Label Content="Max: Yo-ho-ho!" VerticalContentAlignment="Bottom" Foreground="Gray" HorizontalAlignment="Left" Margin="5 0 0 0 "/>
+                    <Label HorizontalAlignment="Right" Content="7:00" Margin="5 2 5 10" Foreground="LightGray"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Border CornerRadius="30" Grid.Column="0" Width="50" Height="50" Background="Blue">
+                        <Label Content="MB" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="White" />
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Content="Max Bright" Foreground="Gray" Background="White" Margin="5 0 0 0 "/>
+                    <Label Content="How about some coffee?" VerticalContentAlignment="Bottom" Foreground="Gray" HorizontalAlignment="Left" Margin="5 0 0 0 "/>
+                    <Label HorizontalAlignment="Right" Content="6:00" Margin="5 2 5 10" Foreground="LightGray"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Border CornerRadius="30" Grid.Column="0" Width="50" Height="50" Background="MediumPurple">
+                        <Label Content="NP" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="White" />
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Content="Natalia Parker" Foreground="Gray" Background="White" Margin="5 0 0 0 "/>
+                    <Label Content="OK,great)" VerticalContentAlignment="Bottom" Foreground="Gray" HorizontalAlignment="Left" Margin="5 0 0 0 "/>
+                    <Label HorizontalAlignment="Right" Content="5:00" Margin="5 2 5 10" Foreground="LightGray"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Border CornerRadius="30" Grid.Column="0" Width="50" Height="50" Background="Pink">
+                        <Label Content="DJ" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Foreground="White" />
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Label Content="Davj Jones" Foreground="Gray" Background="White" Margin="5 0 0 0 "/>
+                    <Label Content="Keynote,pdf" VerticalContentAlignment="Bottom" Foreground="Blue" HorizontalAlignment="Left" Margin="5 0 0 0 "/>
+                    <Label HorizontalAlignment="Right" Content="4:00" Margin="5 2 5 10" Foreground="LightGray"/>
+                </Grid>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.2*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Label Content="Eva Summer"/>
+                    <Label Content="online" Foreground="Blue" Margin="0 15 0 0"/>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Image Source="/Resources/magnifying-glass.png" Stretch="Uniform"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Image Source="/Resources/menu.png" Stretch="Uniform"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1" Background="LightGray">
+                
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="0.7*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Image Source="Resources/attachment.png" Stretch="Uniform" Margin="4"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBox Text="Write a message..." Foreground="LightGray" FontSize="14" Background="White" Name="txtbox" BorderThickness="0" VerticalAlignment="Center" MouseEnter="MyMouseenter" MouseLeave="MyMouseLeave"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Image Source="Resources/emoji.png" Margin="4"/>
+                </Grid>
+                <Grid Grid.Column="3">
+                    <Image Source="Resources/microphone.png" Stretch="Uniform" Margin="5"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
